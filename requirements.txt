@@ -1,0 +1,10 @@
+langgraph
+langchain-gradient
+langchain-core
+streamlit
+faiss-cpu
+python-dotenv
+requests
+langchain-huggingface
+sentence-transformers
+pypdf
