@@ -2,6 +2,7 @@ from typing import Dict
 
 from langchain_core.tools import tool
 from langchain_community.tools import DuckDuckGoSearchRun
+from report_analyzer import analyze_health_report
 
 
 @tool
@@ -81,4 +82,5 @@ tools_list = [
     bmi_calculator,
     symptom_search,
     suggest_doctor,
+    analyze_health_report,
 ]

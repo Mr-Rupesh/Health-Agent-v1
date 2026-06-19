@@ -4,9 +4,10 @@ from langchain_core.messages import HumanMessage
 config = {"configurable": {"thread_id": "test-1"}}
 
 response = chatbot.invoke(
-    {"messages": [HumanMessage(content="My weight is 70kg and height is 175cm, what is my BMI?")]},
+    {"messages": [HumanMessage(content="My hemoglobin is 11.2 and fasting sugar is 130, can you check my report?")]},
     config=config
 )
 
-for msg in response["messages"]:
-    print(type(msg).__name__, "→", msg.content)
+print(response["messages"][-1].content)
+#for msg in response["messages"]:
+#   print(type(msg).__name__, "→", msg.content)
